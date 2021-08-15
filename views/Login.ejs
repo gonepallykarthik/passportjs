@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div
+      class="
+        text-center
+        container
+        mx-auto
+        my-40
+        bg-gray-900
+        w-96
+        h-min
+        py-5
+        px-5
+        rounded-lg
+      "
+    >
+      <form action="/login" method="POST">
+        <div style="color: white"><%- include ('./partials/msgs'); %></div>
+        <h1 class="text-6xl text-white font-semibold mb-8">
+          <u> Login </u> <i class="fas fa-sign-in-alt"></i>
+        </h1>
+        <span class="text-2xl text-white font-thin">Username</span>
+        <input
+          type="emial"
+          required
+          name="username"
+          placeholder="Enter email or Username"
+          class="w-full rounded-sm h-10 mb-4 text-center p-2 outline-none"
+        />
+        <span class="text-2xl text-white font-thin">Password</span>
+        <input
+          type="password"
+          name="pass"
+          required
+          placeholder="Enter Password"
+          class="w-full rounded-sm h-10 mb-10 text-center p-2 outline-none"
+        />
+        <button
+          type="submit"
+          class="bg-green-900 rounded-lg py-2 px-4 text-2xl text-white"
+        >
+          Signup
+        </button>
+        <p class="text-gray-400 text-lg">
+          Doesn't have an account ?
+          <a href="/signup" class="underline text-white">Register</a>
+        </p>
+      </form>
+    </div>
+  </body>
+</html>
